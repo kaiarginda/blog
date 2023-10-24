@@ -1,13 +1,10 @@
 "use client";
 
-import { Metrophobic } from "next/font/google";
 import React from "react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 // *119#
 import Link from "next/link";
-import User from "@/app/models/User";
-import { connectMongoDB } from "@/mongo";
 const Register = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");

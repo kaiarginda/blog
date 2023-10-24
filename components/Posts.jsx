@@ -1,7 +1,6 @@
 import User from "@/app/models/User";
 import React from "react";
-import { connectMongoDB } from "@/mongo";
-
+import Image from "next/image";
 import Link from "next/link";
 const Posts = async () => {
   // await connectMongoDB();
@@ -34,7 +33,7 @@ const Posts = async () => {
                           className="w-full bg-white rounded-md shadow-md overflow-hidden border border-slate-500 flex flex-col gap-10"
                         >
                           <div className="p-4">
-                            <img
+                            <Image
                               className="w-full rounded-[8%]"
                               src={user.image[index].newImage}
                               alt=""

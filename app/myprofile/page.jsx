@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { verify } from "jsonwebtoken";
 import User from "../models/User";
 import Link from "next/link";
+import Image from "next/image";
 const page = async () => {
   const cookieStore = cookies();
 
@@ -15,7 +16,7 @@ const page = async () => {
       return (
         <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center">
           <div className="bg-white p-8 rounded-lg shadow-md w-96 text-center">
-            <img
+            <Image
               src={user.profilePic}
               alt={user.name}
               className="w-32 h-32 mx-auto rounded-full mb-4"

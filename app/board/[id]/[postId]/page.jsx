@@ -4,6 +4,8 @@ import { connectMongoDB } from "@/mongo";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { verify } from "jsonwebtoken";
+import Image from "next/image";
+
 import Comment from "@/components/Comment";
 const page = async ({ params }) => {
   // await connectMongoDB();
@@ -24,7 +26,7 @@ const page = async ({ params }) => {
     return (
       <div className="flex flex-col items-center justify-center">
         <div className="p-4 lg:w-4/5 xl:w-3/5 mx-auto">
-          <img
+          <Image
             src={user.profilePic}
             alt=""
             className="rounded-full h-16 lg:h-20 xl:h-24 mx-auto"
@@ -41,7 +43,7 @@ const page = async ({ params }) => {
           <span className="text-3xl text-center block">
             {user.posts[postId].newPost}
           </span>
-          <img
+          <Image
             src={user.image[postId].newImage}
             alt=""
             className="w-full lg:w-4/5 mx-auto"

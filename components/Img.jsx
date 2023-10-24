@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import Image from "next/image";
 const Img = () => {
   const [image, setImage] = useState("");
 
@@ -22,7 +23,7 @@ const Img = () => {
       {image == "" || image == null ? (
         ""
       ) : (
-        <img src={image} height={100} width={100} alt="" />
+        <Image src={image} height={100} width={100} alt="" />
       )}
     </div>
   );

@@ -31,7 +31,7 @@ import { useRouter } from "next/navigation";
 import CreatePost from "@/components/CreatePost";
 import { AiFillDelete } from "react-icons/ai";
 import { BiEdit } from "react-icons/bi";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Audio, Dna } from "react-loader-spinner";
 import Link from "next/link";
@@ -98,7 +98,7 @@ const PAG = (user) => {
   return (
     <div className="flex flex-col justify-center p-4">
       <div className="bg-red-300 rounded-lg p-4 shadow-md text-center">
-        <img
+        <Image
           src={user.user.profilePic}
           className="w-32 h-32 mx-auto rounded-full object-cover"
           alt=""

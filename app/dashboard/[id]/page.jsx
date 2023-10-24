@@ -27,7 +27,7 @@ const page = async ({ params }) => {
         </div> */}
 
         <div className="flex items-center space-x-4">
-          <img
+          <Image
             className="w-12 h-12 rounded-full border-2 border-slate-900"
             src={realUser.profilePic}
             alt={realUser.name}
@@ -44,7 +44,7 @@ const page = async ({ params }) => {
           {realUser.posts[id].newPost}
         </h1>
 
-        <img
+        <Image
           className="w-full rounded-md"
           src={realUser.image[id].newImage}
           alt=""

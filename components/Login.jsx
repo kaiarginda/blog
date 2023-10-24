@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");

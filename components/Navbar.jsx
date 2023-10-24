@@ -3,6 +3,7 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { verify } from "jsonwebtoken";
 import Logout from "./Logout";
+import Image from "next/image";
 const Navbar = () => {
   const cookieStore = cookies();
   const token = cookieStore.get("OutSideJWT");
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-10 mb-10 shadow-lg bg-red-300">
         <div className="flex items-center">
           <div>
-            <img
+            <Image
               className="h-[200px] w-[250px]"
               src="https://blog.hubspot.com/hubfs/assets/hubspot.com/web-team/WBZ/Blog%202021/Images/Icons/Sprocket.svg"
               alt="profile-image"
