@@ -5,8 +5,7 @@ import { verify } from "jsonwebtoken";
 import User from "@/app/models/User";
 import Link from "next/link";
 import "../../def.css";
-import Comment from "@/components/Comment";
-
+import Image from "next/image";
 const page = async ({ params }) => {
   await connectMongoDB();
   const cookieStore = cookies();
