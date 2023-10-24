@@ -130,6 +130,7 @@ const page = async ({ params }) => {
             {user.postComments[postId].map((com) => {
               return (
                 <div
+                  key={Math.random() * 213}
                   className="w-11/12 bg-white rounded-lg p-4 shadow-md mb-4 max-w-[400px]"
                   style={{ wordWrap: "break-word" }}
                 >

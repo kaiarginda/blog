@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-10 mb-10 shadow-lg bg-red-300">
           <div className="flex items-center">
             <div>
-              <img
+              <Image
                 className="h-[200px] w-[250px]"
                 src="https://blog.hubspot.com/hubfs/assets/hubspot.com/web-team/WBZ/Blog%202021/Images/Icons/Sprocket.svg"
                 alt=""
@@ -65,13 +65,11 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-10">
             <Logout />
-          
           </div>
         </div>
       );
     }
   }
 };
-
 
 export default Navbar;
